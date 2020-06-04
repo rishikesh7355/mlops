@@ -61,8 +61,13 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 
 print('\nTest accuracy:', test_acc)
 
-accuracy_score=test_acc
+model.save("fashion_mnist.h5")
+
+scores=model.evaluate(x_test,y_test,verbose=1)
+print("\nAccuracy is :-\n")
+print(int(scores[1]*100))
+
+accuracy_score=scores
 sys.stdout=open("output.txt","w")
 print(accuracy_score)
 sys.stdout.close()
-
