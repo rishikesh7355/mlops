@@ -11,7 +11,7 @@ from keras.utils import np_utils
 # Tweeking Model 
 ker_size = 2
 batch_size_passed = 1024
-no_of_epochs = 10
+no_of_epochs = 5
 crp_count = 1
 fc_count = 1
 if len(sys.argv) == 2:
