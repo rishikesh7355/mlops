@@ -112,7 +112,7 @@ scores=model.evaluate(x_test,y_test,verbose=1)
 print("\nAccuracy is :-\n")
 print(int(scores[1]*100))
 
-accuracy_score=scores
+accuracy_score=(int(scores[1]*100))
 sys.stdout=open("output.txt","w")
 print(accuracy_score)
 sys.stdout.close()
